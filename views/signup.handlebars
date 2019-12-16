@@ -1,0 +1,18 @@
+<div class="container-fluid">
+    <h2>Inscription</h2>
+    <form action="/users/add" method="POST">
+        <label>Utilisateur</label>
+        <input type="text" placeholder="Username" class="form-control" name="username" />
+        <label>Mot de passe</label>
+        <input type="password" placeholder="Password" class="form-control" name="password" />
+        <label>City</label>
+        <input class="form-control" list="city" name="city">
+        <datalist id="city">
+            <option value="Paris" selected>
+            <option value="Tokyo">
+            <option value="Los Angeles">
+        </datalist>
+        <br>
+        <button class="btn btn-primary" type="submit">S'incrire</button>
+    </form>
+</div>
